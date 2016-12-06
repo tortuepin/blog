@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://tortuepin.github.io/blog"
 title = "tortuepin's blog"
 languageCode = "jp-ja"
-theme="liquorice"
+theme = "liquorice"

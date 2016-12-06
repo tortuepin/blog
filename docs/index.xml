@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tortuepin&#39;s blog</title>
-    <link>http://replace-this-with-your-hugo-site.com/index.xml</link>
+    <link>https://tortuepin.github.io/blog/index.xml</link>
     <description>Recent content on tortuepin&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp-ja</language>
     <lastBuildDate>Tue, 06 Dec 2016 22:35:46 +0900</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tortuepin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>http://replace-this-with-your-hugo-site.com/about/</link>
+      <link>https://tortuepin.github.io/blog/about/</link>
       <pubDate>Tue, 06 Dec 2016 22:35:46 +0900</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/about/</guid>
+      <guid>https://tortuepin.github.io/blog/about/</guid>
       <description></description>
     </item>
     

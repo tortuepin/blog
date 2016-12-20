@@ -49,6 +49,47 @@
                         <div class="li-article">
                             <article>
     <header>
+        <h2><a href="https://tortuepin.github.io/blog/hello/">計算機室に行かずに卒業する </a></h2>
+        <time class="li-article-date">Saturday, December 17, 2016</time>
+    </header>
+    <section class="li-article-section">
+        この記事は、mast Advent Calendar 2016 の20日目の記事です。
+0. はじめに 私は機室が嫌いです。
+嫌いなので機室には行かないことにして、機室のPCでやる課題は自分のPCでもできるように環境を整えました。
+それなりに苦労はありましたが、おかげでもうかれこれ二年くらい授業以外では機室に行っていませんし、授業もあんまり行っていません。
+基本的な部分だけですが、誰かの役にたつと嬉しい。
+私の環境はmacですが、windowsでもできます。winの人はBush on Ubuntu on Windowsを使うと良いでしょう。[ここ]を見ると良いです。
+1. SSH sshを使うと自分のPCから全額計算機システムの端末を利用することができます。[この辺]を参照
+これさえあれば大抵の場合は機室に行かなくてもなんとかなるようになります。
+前はパスワードだけで使えたのですがいつの間にか公開鍵認証方式になってました。 詳しくは[公開鍵認証によるUNIXシェルログイン]とかを参照してください。
+sshの設定 さて、鍵の設定が終わったらターミナル上で
+ssh -i id_rsa sXXXXXXX@hoge.tsukuba.ac.jp  とかやると接続できますが、いちいちこれを入力するのは面倒くさいので、.ssh/configを利用します。
+.ssh/configとはsshの設定ファイルです。
+詳しくはググってもらうとして([この辺]が参考になります)
+~/.ssh/configに
+Host 任意の名前(univ) HostName ホスト名(ubuntu.tsukuba.ac.jp) User ユーザー名(sXXXXXXX) Port ポート番号(22) IdentityFile 鍵へのパス(~/.ssh/hoge.keyとか)  と入力しておくと
+ssh univ  とやるだけで接続できるようになります。
+接続できたら 接続できたらあとは機室のubuntuの端末と同じように使えます。
+ただし、使えるのは端末だけなので、普段メモ帳とかを使っている人は端末内で使えるテキストエディタを使う必要があります。
+vimを使いましょう。
+sshを抜ける時は
+exit  です。
+2. リモートデスクトップ sshから利用できるのは端末だけですが、デスクトップ環境をリモートで利用する方法もあります。
+[この辺]を見たりググると良いでしょう。
+動作がモッサリなので私はあまり使いません。 学内からしかアクセスできないwebページを見るときには使えます。
+3. Visual Studio 二年生まではsshとリモートデスクトップさえ使えれば問題なかったのですが、三年生になって突然Visual Studioの使用を(半ば)強制する授業が出てきました。
+私はmacを使っているのですが、[bootcamp]と[Microsoft Imagine]を駆使すればなんの問題もありません。
+    </section>
+    <footer>
+        <a href='https://tortuepin.github.io/blog/hello/'>More</a>
+    </footer>
+</article>
+
+                        </div>
+                    
+                        <div class="li-article">
+                            <article>
+    <header>
         <h2><a href="https://tortuepin.github.io/blog/about/">about </a></h2>
         <time class="li-article-date">Tuesday, December 6, 2016</time>
     </header>
